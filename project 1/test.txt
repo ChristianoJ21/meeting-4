@@ -3,3 +3,28 @@ input : 5
 
 Expected Output:
 sum : 15
+
+Input:
+input : 3
+
+Expected Output:
+sum : 6
+
+Input:
+input : 10
+
+Expected Output:
+sum : 55
+
+Input:
+input : 1
+
+Expected Output:
+sum : 1
+
+Input:
+input : 0
+
+Expected Output:
+sum : 0
+
