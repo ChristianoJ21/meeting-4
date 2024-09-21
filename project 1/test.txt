@@ -1,0 +1,5 @@
+Input:
+input : 5
+
+Expected Output:
+sum : 15
