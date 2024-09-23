@@ -9,7 +9,7 @@ int main()
     cout << "input : ";
     cin >> i;
     
-    for (i; i >= 1; i--) {
+    for (; i >= 1; i--) {
       
         sum += i;
     }
