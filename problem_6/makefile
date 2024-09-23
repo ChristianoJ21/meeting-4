@@ -1,12 +1,23 @@
-OUTPUT = sum_calculator
+# Variables
 CXX = g++
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall
+TARGET = multiplicationtable
 SRC = multtable.cpp
-all: $(OUTPUT)
-$(OUTPUT): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(OUTPUT) $(SRC)
-test: $(OUTPUT)
-	./$(OUTPUT) test
+
+# Default target: compile the program
+all: $(TARGET)
+
+# Compile the multtable.cpp
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program in test mode (using test.txt)
+test: $(TARGET)
+	./$(TARGET) test
+
+# Clean up the compiled files
 clean:
-	rm -f $(OUTPUT)
+	rm -f $(TARGET)
+
+# Phony targets to avoid conflicts
 .PHONY: all clean test
